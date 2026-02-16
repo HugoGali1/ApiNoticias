@@ -1,6 +1,6 @@
 import { Module } from '@nestjs/common';
 import { NoticiasController } from './noticias.controller';
-import { NoticiasService } from './noticias.service';
+import { NoticiaService } from './noticias.service';
 import { MongooseModule } from '@nestjs/mongoose';
 import { NoticiasSchema } from './schema/noticias.schema/noticias.schema';
 
@@ -15,6 +15,6 @@ import { NoticiasSchema } from './schema/noticias.schema/noticias.schema';
     ]),
   ],
   controllers: [NoticiasController],
-  providers: [NoticiasService],
+  providers: [NoticiaService],
 })
 export class NoticiasModule {}
