@@ -108,7 +108,7 @@ export class NoticiasController {
     }
   }
 
-  @Get('buscarNoticiaToAutor/: tituloAutor')
+  @Get('buscarNoticiaToAutor/:tituloAutor')
   async getNoticiaPorTituloAutor(@Param('tituloAutor') tituloAutor: string) {
     try {
       const data= await this.noticiaService.getNoticiaPorTituloAutor(tituloAutor);
@@ -140,7 +140,7 @@ export class NoticiasController {
       )
     }
   }
-  @Get('noticiasPorSeccion/ :nombre')
+  @Get('noticiasPorSeccion/:nombre')
   async getNoticiasPorSeccion(@Param('nombre') nombre: string) {
     try {
       const data=await this.noticiaService.getNoticiasPorSeccion(nombre);

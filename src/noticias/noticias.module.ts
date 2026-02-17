@@ -8,7 +8,7 @@ import { NoticiasSchema } from './schema/noticias.schema/noticias.schema';
   imports: [
     MongooseModule.forFeature([
       {
-        name: 'Noticias',
+        name: 'Noticia',
         schema: NoticiasSchema,
         collection: 'noticias2526',
       },
